@@ -1,0 +1,317 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/* My styling */
+/* Header styles */
+.header-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#login-icon {
+    width: 25px;
+}
+.header-name,
+.login-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-label {
+    padding-left: 5px;
+    font-size: 1.1em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.brandname {
+    font-size: 1.3em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+/* Form and background styling */
+.bg-cover {
+    background-image: url(/img/cover.jpg);
+    height: 32em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.formelements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1em;
+}
+.inputfield {
+    width: 10em;
+    font-size: 1.2em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.legend {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1em 0;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.legend-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search {
+    font-size: 1.3em;
+    margin-top: 0.6em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: white;
+    border: 1px solid grey;
+    padding: 0.2em 0.5em;
+    box-shadow: 0.5px 0.5px 3px 1.5px rgb(189, 193, 197);
+}
+.form {
+    background-color: white;
+    opacity: 0.9;
+    width: 20em;
+    margin-top: 2em;
+    padding-bottom: 1em;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-label {
+    font-size: 1.4em;
+    text-align: center;
+    padding: 0.2em 0;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+/* Grid elements to use in desktop version */
+#date1 {
+    grid-area: one;
+}
+#date2 {
+    grid-area: two;
+}
+#persons1 {
+    grid-area: three;
+}
+#suitcases1 {
+    grid-area: four;
+}
+/* Itemlist styling */
+.itemlist-container {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1 em;
+}
+.single-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border: 1px solid grey;
+    margin: 1em;
+}
+.car-img {
+    width: 300px;
+}
+.car-img-cont {
+    display: flex;
+    justify-content: center;
+}
+.car-name-cont,
+.car-desc-cont,
+.costnbook-cont {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.1em;
+}
+.car-desc-cont {
+    flex-direction: column;
+}
+.costnbook-cont {
+    align-items: center;
+    flex-direction: column;
+}
+.car-name {
+    font-size: 1.8em;
+    margin-top: 0.5em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.car-description {
+    font-size: 1.4em;
+    line-height: 1.3em;
+    text-align: center;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.cost {
+    font-size: 1.7em;
+    margin-bottom: 0.7em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.booknow {
+    font-size: 1.3em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: rgb(248, 206, 142);
+    border: 1px solid rgb(247, 198, 124);
+    padding: 0.2em 0.5em;
+    box-shadow: 0.5px 0.5px 3px 1.5px rgb(189, 193, 197);
+}
+/* Footer */
+footer {
+    background-color: rgb(233, 233, 233);
+    height: 3em;
+}
+.footerinfo-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerinfo {
+    margin-top: 1em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+main {
+    min-height: 50em;
+}
+
+/* Desktop styles */
+@media screen and (min-width:800px) {
+    .header-cont {
+        padding: 1.2em 0;
+    }
+    .brandname {
+        font-size: 2em;
+    }
+    .login-label {
+        margin-left: 0.6em;
+        font-size: 1.2em;
+    }
+    .form-container {
+        display: block;
+        margin-left: 12em;
+        margin-top: 8em;
+    }
+    .bg-cover {
+        height: 40em;
+        background-position: 30% 70%;
+    }
+    .single-item {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 6em;
+        margin-right: 6em;
+    }
+    .car-img {
+        width: 20vw;
+    }
+    .cost {
+        font-size: 5vh;
+    }
+    .itemlist-container {
+        margin-bottom: 2em;
+    }
+    .formelements-cont {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            "one two"
+            "three four";
+    }
+    .form {
+        width: 28em;
+        padding: 1em;
+    }
+    #searchbutton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search:hover {
+        transition: 0.2s;
+        background-color: lightgray;
+    }
+    .booknow:hover {
+        transition: 0.2s;
+        background-color: rgb(245, 192, 112);
+    }
+    main {
+        min-height: 50.5em;
+    }
+}
