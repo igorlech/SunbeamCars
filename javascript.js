@@ -28,13 +28,6 @@ function calcRentalCost (days, priceperday) {
     return totalprice;
 }
 
-fetch("https://igorlech.github.io/sunbeam/cars.json")
-.then(function(data) {
-    return data.json();
-})
-.then (function(post) {
-
-    const carlist = post;
 
     const form = document.getElementById("form");
     form.addEventListener("submit", function(e) {
@@ -83,8 +76,3 @@ fetch("https://igorlech.github.io/sunbeam/cars.json")
             error.innerHTML = "The end date cannot be chosen before the start date";
         }
     })
-
-})
-.catch (function (error) {
-    output.innerHTML = "Service is unbelievable";
-})
