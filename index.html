@@ -16,7 +16,9 @@
             </div>
             <div class="login-cont">
                 <a href="#"><img src="img/login.png" alt="Log In icon" class="login-icon" id="login-icon"></a>
-                <a href="#"><label for="login-icon" class="login-label">Log In</label></a>
+                <a href="#"><p class="login-label">Log In</p></a>
+                <a href="aboutus.html"><img src="img/id-card.png" alt="About us icon" class="aboutus-icon" id="aboutus-icon"></a>
+                <a href="aboutus.html"><p class="login-label aboutus-label" id="aboutus-label">About us</p></a>
             </div>
         </div>
     </header>
@@ -26,7 +28,7 @@
                 <form id="form" class="form">
                     <fieldset>
                         <div class="legend-cont">
-                            <legend class="legend">Find the car that suits you</legend>
+                            <h1 class="legend">Find the car that suits you</h1>
                         </div>
                         <div class="formelements-cont">
                             <div class="formelements" id="date1">
@@ -38,12 +40,12 @@
                                 <input type="date" class="inputfield" id="date-end" name="rent-end" value="2022-01-28" min="2022-01-01" max="2029-12-31">
                             </div>
                             <div class="formelements" id="persons1">
-                                <label for="number" class="form-label">Number of persons</label>
+                                <label for="number1" class="form-label">Number of persons</label>
                                 <input type="number" class="inputfield" id="number1" required min="1" max="7">
                             </div>
                             <div class="formelements" id="suitcases1">
                                 <label for="suitcases" class="form-label">Number of suitcases</label>
-                                <select name="suitcases" id="suitcases" class="inputfield" required>
+                                <select name="suitcases" id="suitcases" class="inputfield">
                                     <option value="0" class="option">0 - only a bag</option>
                                     <option value="1" class="option">1 suitcase</option>
                                     <option value="2" class="option">2 suitcases</option>
@@ -69,7 +71,10 @@
             <h2 class="footerinfo">By Igor Lech</h2>
         </div>
     </footer>
-    <script src="carsobject.js"></script>
-    <script src="javascript.js"></script>
+    <script src="js/carsobject.js"></script>
+    <script src="js/javascript.js"></script>
+    <!-- <script src="passdata.js"></script> -->
+    <!-- <script src="headerelement.js"></script> -->
+    <!-- <script src="getindex.js"></script> -->
 </body>
 </html>

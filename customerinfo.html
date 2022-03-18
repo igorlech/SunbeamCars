@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunbeamCars Inc. | Customer information</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pog4htq.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="header-cont">
+            <div class="header-name">
+                <a href="index.html"><h1 class="brandname">SunbeamCars Inc.</h1></a>
+            </div>
+            <div class="login-cont">
+                <a href="#"><img src="img/login.png" alt="Log In icon" class="login-icon" id="login-icon"></a>
+                <a href="#"><p class="login-label">Log In</p></a>
+                <a href="aboutus.html"><img src="img/id-card.png" alt="About us icon" class="aboutus-icon" id="aboutus-icon"></a>
+                <a href="aboutus.html"><p class="login-label aboutus-label" id="aboutus-label">About us</p></a>
+            </div>
+        </div>
+    </header>
+    <main class="customer-main">
+        <div class="bannerholder2"></div>
+        <div class="user-input-area">
+            <form class="form-c" id="form-c">
+                <fieldset class="fieldset-c">
+                    <legend class="legend-c">Your information</legend>
+                    <div class="single-input" id="cc1">
+                        <label for="fname" class="si-label">First name</label>
+                        <input type="text" id="fname" name="fname" class="inputfield" required>
+                    </div>
+                    <div class="single-input" id="cc2">
+                        <label for="lname" class="si-label">Last name</label>
+                        <input type="text" id="lname" name="lname" class="inputfield" required>
+                    </div>
+                    <div class="single-input" id="cc3">
+                        <label for="sname" class="si-label">Street name</label>
+                        <input type="text" id="sname" name="sname" class="inputfield" required>
+                    </div>
+                    <div class="single-input" id="cc4">
+                        <label for="nfname" class="si-label">Number/floor</label>
+                        <input type="text" id="nfname" name="nfname" class="inputfield" required>
+                    </div>
+                    <div class="single-input" id="cc5">
+                        <label for="pcname" class="si-label">Postal code and city</label>
+                        <input type="text" id="pcname" name="pcname" class="inputfield" required list="postalnumbers">
+                        <datalist id="postalnumbers"></datalist>
+                    </div>
+                    <div class="single-input-check" id="cc6">
+                        <input type="checkbox" data-item="18yearsold" class="checkitem-c" id="checkitem-c" required>
+                        <label for="checkitem-c" class="si-label">I am 18 years old</label>
+                    </div>
+                    <div class="c-booknow" id="cc7">
+                        <button type="submit" class="c-input-save">Book now</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="c-aside-area">
+            <div id="check-output-total" class="c-aside-class"></div>
+            <div id="check-output-carlist" class="c-aside-class"></div>
+            <h1 class="accosen-head">Accessories chosen:</h1>
+            <div id="check-output-list" class="c-aside-class"></div>
+            <div id="check-output-aconly" class="c-aside-class"></div>
+        </div>
+    </main>
+    <script src="js/citycodes.js"></script>
+    <script src="js/passcheckbox.js"></script>
+    <script src="js/yourinfo.js"></script>
+    <script src="js/printscript.js"></script>
+</body>
+</html>

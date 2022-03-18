@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunbeamCars Inc. | Your receipt</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pog4htq.css">
+</head>
+<body>
+    <header class="page-header noPrint">
+        <div class="header-cont">
+            <div class="header-name">
+                <a href="index.html"><h1 class="brandname">SunbeamCars Inc.</h1></a>
+            </div>
+            <div class="login-cont">
+                <a href="#"><img src="img/login.png" alt="Log In icon" class="login-icon" id="login-icon"></a>
+                <a href="#"><p class="login-label">Log In</p></a>
+                <a href="aboutus.html"><img src="img/id-card.png" alt="About us icon" class="aboutus-icon" id="aboutus-icon"></a>
+                <a href="aboutus.html"><p class="login-label aboutus-label" id="aboutus-label">About us</p></a>
+            </div>
+        </div>
+    </header>
+    <main class="receipt-main">
+        <div class="bannerholder2 noPrint"></div>
+        <div class="user-input-area u2">
+            <h1 class="ui-r-heading">Thanks! We will have the car ready for you!</h1>
+            <x-currenttime></x-currenttime>
+            <div class="r-output" id="r-output"></div>
+            <div class="printbutton-cont">
+                <button type="button" class="printbutton noPrint" value="print" onclick="window.print()">Print</button>
+            </div>
+        </div>
+        <div class="c-aside-area">
+            <div id="check-output-total" class="c-aside-class"></div>
+            <div id="check-output-carlist" class="c-aside-class"></div>
+            <h1 class="accosen-head">Accessories chosen:</h1>
+            <div id="check-output-list" class="c-aside-class"></div>
+            <div id="check-output-aconly" class="c-aside-class"></div>
+        </div>
+    </main>
+    <script src="js/passcheckbox.js"></script>
+    <script src="js/getcustom.js"></script>
+    <script src="js/printscript.js"></script>
+    <script src="js/timeshower.js"></script>
+</body>
+</html>
