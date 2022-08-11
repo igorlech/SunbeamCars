@@ -62,6 +62,9 @@ a {
 #login-icon {
     width: 25px;
 }
+#aboutus-icon {
+    width: 35px;
+}
 .header-name,
 .login-cont {
     display: flex;
@@ -74,6 +77,12 @@ a {
     font-family: forma-djr-deck,sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+.aboutus-label {
+    padding-left: 0;
+}
+.aboutus-icon {
+    padding-left: 25px;
 }
 .brandname {
     font-size: 1.3em;
@@ -165,7 +174,7 @@ a {
     margin-top: 1em;
     display: flex;
     flex-direction: column;
-    margin-bottom: 1 em;
+    margin-bottom: 1em;
 }
 .single-item {
     display: flex;
@@ -243,10 +252,197 @@ footer {
     font-weight: 400;
     font-style: italic;
 }
-main {
+.page-main {
     min-height: 50em;
 }
-
+/* ACCESORY PAGE STYLING */
+.bannerholder,
+.bannerholder2 {
+    background-image: url(/img/access-b1.jpg);
+    height: 10em;
+    background-position: 25% 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.aside-heading {
+    margin: 1em;
+    font-size: 2em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.output-aside {
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.6em;
+    margin-bottom: 1.2em;
+}
+.from-input-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(248, 206, 142);
+}
+.checkbox-area {
+    background-color: rgb(231, 231, 231);
+}
+.fieldclass {
+    display: flex;
+    flex-direction: column;
+}
+.a-check-single {
+    margin-left: 0.8em;
+    margin-bottom: 1em;
+}
+.a-c-lab{
+    font-size: 1.5em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.legend-a,
+.legend-c {
+    text-align: center;
+    font-size: 1.7em;
+    padding-top: 1.3em;
+    padding-bottom: 1.5em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.a-savecont {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 0.85em;
+}
+.a-check-save,
+.c-input-save,
+.printbutton {
+    font-size: 1.5em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: rgb(248, 206, 142);
+}
+.a-check-save:hover,
+.c-input-save:hover,
+.printbutton:hover {
+    background-color: rgb(245, 192, 112);
+}
+.all-inclusive-aside {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: rgb(248, 206, 142);
+}
+.ai-text1 {
+    font-size: 1.6em;
+    text-align: center;
+    padding-bottom: 0.3em;
+    padding-top: 0.3em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.totaloutput {
+    text-align: center;
+    font-size: 1.6em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+/* CUSTOMER INFORMATION PAGE STYLING */
+.single-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+}
+.single-input-check {
+    display: flex;
+    margin-bottom: 1.5em;
+}
+.user-input-area {
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    justify-content: center;
+}
+.c-aside-area {
+    background-color: rgb(248, 206, 142);
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 2em;
+}
+.c-aside-class {
+    margin-bottom: 1em;
+}
+.c-booknow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.c-input-save {
+    font-size: 1.5em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.si-label {
+    font-size: 1.3em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 0.2em;
+}
+.u2 {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-bottom: 1.5em;
+}
+.printbutton-cont {
+    padding-top: 1em;
+}
+.ui-r-heading {
+    font-size: 1.5em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 0.5em
+}
+/* Styling the c-aside-area */
+.c-aside-class {
+    font-size: 1.3em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.r-output {
+    font-size: 1.3em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+x-currenttime {
+    font-size: 1.3em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.accosen-head {
+    font-size: 1.3em;
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+#check-output-list {
+    padding-top: 0px;
+}
 /* Desktop styles */
 @media screen and (min-width:800px) {
     .header-cont {
@@ -265,7 +461,7 @@ main {
         margin-top: 8em;
     }
     .bg-cover {
-        height: 40em;
+        height: 37em;
         background-position: 30% 70%;
     }
     .single-item {
@@ -311,7 +507,308 @@ main {
         transition: 0.2s;
         background-color: rgb(245, 192, 112);
     }
-    main {
+    .page-main {
         min-height: 50.5em;
     }
+    /* ACCESSORY PAGE STYLING */
+    .access-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "ban ban ban ban"
+        "fia check check aia"
+        "fia check check aia";
+    }
+    .bannerholder {
+        grid-area: ban;
+        height: auto;
+    }
+    .from-input-aside {
+        grid-area: fia;
+    }
+    .checkbox-area {
+        grid-area: check;
+    }
+    .all-inclusive-aside {
+        grid-area: aia;
+    }
+    .fieldclass {
+        display: grid;
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "a1 a2"
+        "a3 a4"
+        "a5 a6"
+        "a7 ."
+        "a8 a8"; 
+    }
+    #acs1 {
+        grid-area: a1;
+    }
+    #acs2 {
+        grid-area: a2;
+    }
+    #acs3 {
+        grid-area: a3;
+    }
+    #acs4 {
+        grid-area: a4;
+    }
+    #acs5 {
+        grid-area: a5;
+    }
+    #acs6 {
+        grid-area: a6;
+    }
+    #acs7 {
+        grid-area: a7;
+    }
+    #acs8 {
+        grid-area: a8;
+    }
+    .totaloutput {
+        font-size: 2.2em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    /* CUSTOMER INFO PAGE desktop */
+    .customer-main,
+    .receipt-main {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas: 
+        "ban2 ban2"
+        "cus1 cus2"
+        "cus1 cus2";
+    }
+    .bannerholder2 {
+        grid-area: ban2;
+        height: auto;
+    }
+    .user-input-area {
+        grid-area: cus1;
+    }
+    .c-aside-area {
+        grid-area: cus2;
+    }
+    .fieldset-c {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 50px;
+        grid-template-areas: 
+        "cell1 cell2"
+        "cell3 cell4"
+        "cell5 cell6"
+        "cell7 cell7";
+    }
+    #cc1 {
+        grid-area: cell1;
+    }
+    #cc2 {
+        grid-area: cell2;
+    }
+    #cc3 {
+        grid-area: cell3;
+    }
+    #cc4 {
+        grid-area: cell4;
+    }
+    #cc5 {
+        grid-area: cell5;
+    }
+    #cc6 {
+        grid-area: cell6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #cc7 {
+        grid-area: cell7;
+    }
+    .user-input-area {
+        padding-bottom: 1.7em;
+    }
+    .c-booknow {
+        padding-top: 0.8em;
+    }
+    .c-aside-area {
+        padding-left: 4em;
+    }
+    /* Receipt page desktop */
+    .u2 {
+        padding-top: 1.6em;
+        padding-bottom: 10.7em;
+        padding-left: 3em;
+    }
 }
+@media print {
+    .noPrint {
+        display: none;
+    }
+}
+
+/* About Us with parallax */
+video {
+    display: block;
+}
+.bgnd {
+    background-image: url("../img/cc1.png");
+}
+.bgnd2 {
+    background-image: url("../img/carservice.jpg");
+}
+.bgnd3 {
+    background-image: url("../img/carcouple.jpg");
+}
+.bgnd4 {
+    background-image: url("../img/access-b2.jpg");
+}
+.about-main {
+    font-family: forma-djr-deck,sans-serif;
+}
+.parallax {
+    width: 100%;
+    padding: 18.5em 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.parallax2 {
+    width: 100%;
+    padding: 10em 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30% 70%;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.heading-about {
+    color: #fff;
+    font-size: 6em;
+    font-weight: 600;
+    padding-left: 1em;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+}
+.test {
+    padding-bottom: 25em;
+}
+#aboutheader {
+    position: absolute;
+    z-index: 999;
+    background-color: #fff;
+    width: 100%;
+}
+.navigation {
+    position: fixed;
+    z-index: 1;
+    right: 0em;
+    padding-right: 3em;
+    padding-left: 1em;
+    padding-top: 6em;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+    height: 100%;
+    overflow: hidden;
+}
+.menuelement {
+    display: block;
+    font-size: 2em;
+    color: #fff;
+    /* color: rgb(207, 189, 20); */
+    padding-bottom: 0.5em;
+}
+.btw-head,
+.btw-text {
+    width: 75%;
+}
+.btw-head {
+    font-size: 3em;
+    margin-left: 1.9em;
+    margin-top: 1em;
+    padding-top: 0.2em;
+}
+.btw-text {
+    font-size: 1.5em;
+    margin-left: 3.7em;
+    margin-top: 1em;
+    line-height: 1.3em;
+}
+.between-em {
+    margin-bottom: 3em;
+}
+.between {
+    padding-bottom: 2.2em;
+}
+.video {
+    width: 100%;
+}
+.active {
+    color: rgb(207, 189, 20);
+}
+.btw-text {
+    font-family: oscine,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Animation from animista */
+.tracking-in-contract {
+	-webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2022-3-16 9:49:16
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-contract
+ * ----------------------------------------
+ */
+ @-webkit-keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  

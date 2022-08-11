@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunbeamCars Inc. | Accesories</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pog4htq.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="header-cont">
+            <div class="header-name">
+                <a href="index.html"><h1 class="brandname">SunbeamCars Inc.</h1></a>
+            </div>
+            <div class="login-cont">
+                <a href="#"><img src="img/login.png" alt="Log In icon" class="login-icon" id="login-icon"></a>
+                <a href="#"><p class="login-label">Log In</p></a>
+                <a href="aboutus.html"><img src="img/id-card.png" alt="About us icon" class="aboutus-icon" id="aboutus-icon"></a>
+                <a href="aboutus.html"><p class="login-label aboutus-label" id="aboutus-label">About us</p></a>
+            </div>
+        </div>
+    </header>
+    <main class="access-main">
+        <div class="bannerholder"></div>
+        <div class="from-input-aside">
+            <h1 class="aside-heading">Well chosen!</h1>
+            <div class="output-aside" id="output-aside"></div>
+        </div>
+        <div class="checkbox-area">
+            <form class="form-a" id="form-a">
+                <fieldset class="fieldclass">
+                    <legend class="legend-a">Select accesories (excl. VAT)</legend>
+                    <div class="a-check-single" id="acs1">
+                        <input type="checkbox" data-item="Second driver" class="checkitem" value="199.00" id="checkitem1" onchange="calculateTotal(this, this.value)">
+                        <label for="checkitem1" class="a-c-lab">Second driver dkr. 199,00</label>
+                    </div>
+                    <div class="a-check-single" id="acs2">
+                        <input type="checkbox" data-item="Child seat 1-4" class="checkitem" value="140.00" id="checkitem2" onchange="calculateTotal(this, this.value)">
+                        <label for="checkitem2" class="a-c-lab">Child seat (1-4 years) dkr. 140,00</label>
+                    </div>
+                    <div class="a-check-single" id="acs3">
+                        <input type="checkbox" data-item="Child seat 5-12" class="checkitem" value="155.00" id="checkitem3" onchange="calculateTotal(this, this.value)">
+                        <label for="checkitem3" class="a-c-lab">Child seat (5-12 years) dkr. 155,00</label>
+                    </div>
+                    <div class="a-check-single" id="acs4">
+                        <input type="checkbox" data-item="GPS navigation" class="checkitem" value="250.00" id="checkitem4" onchange="calculateTotal(this, this.value)">
+                        <label for="checkitem4" class="a-c-lab">GPS navigation dkr. 250,00</label>
+                    </div>
+                    <div class="a-check-single" id="acs5">
+                        <input type="checkbox" data-item="Roadside Aid" class="checkitem" value="120.00" id="checkitem5" onchange="calculateTotal(this, this.value)">
+                        <label for="checkitem5" class="a-c-lab">Roadside Aid dkr. 120,00</label>
+                    </div>
+                    <div class="a-check-single" id="acs6">
+                        <input type="checkbox" data-item="Snow chains" class="checkitem" value="188.00" id="checkitem6" onchange="calculateTotal(this, this.value)">
+                        <label for="checkitem6" class="a-c-lab">Snow chains dkr. 188,00</label>
+                    </div>
+                    <div class="a-check-single" id="acs7">
+                        <input type="checkbox" data-item="Baby seat 0-1" class="checkitem" value="100.00" id="checkitem7" onchange="calculateTotal(this, this.value)">
+                        <label for="checkitem7" class="a-c-lab">Baby seat (0-1) dkr. 100,00</label>
+                    </div>
+                    <div class="a-savecont" id="acs8">
+                        <button type="submit" class="a-check-save" id="continueb">Continue</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="all-inclusive-aside">
+            <div class="finalprice-box">
+                <p class="ai-text1">All inclusive:</p>
+                <!-- <p class="ai-text2">TOTAL: 1.000,50 kr.</p> -->
+                <div class="totaloutput" id="totaloutput"></div>
+                <div class="totaloutput2" id="totaloutput2"></div>
+                <p class="ai-text1">incl. VAT</p>
+            </div>
+        </div>
+    </main>
+    <script src="js/passdata.js"></script>
+    <script src="js/checkcount.js"></script>
+    <!-- <script src="gettoaccess.js"></script> -->
+</body>
+</html>
