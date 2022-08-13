@@ -92,7 +92,7 @@ a {
 }
 /* Form and background styling */
 .bg-cover {
-    background-image: url(../img/cover.jpg);
+    background-image: url(./img/cover.jpg);
     height: 32em;
     background-position: center;
     background-repeat: no-repeat;
