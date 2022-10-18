@@ -32,9 +32,9 @@ const observerAnim = new IntersectionObserver((entries, observer) => {
     })
 }, {threshold: 0.5})
 
-const texts = document.getElementsByClassName("btw-head");
+const anims = document.getElementsByClassName("btw-head");
 
-for (const anim2 of texts) {
+for (const anim2 of anims) {
     observerAnim.observe(anim2)
 }
 

@@ -29,24 +29,24 @@ function calcRentalCost (days, priceperday) {
 }
 
 
-    const form = document.getElementById("form");
-    form.addEventListener("submit", function(e) {
-        e.preventDefault();
-        output.innerHTML = "";
-        error.innerHTML = "";
-        const datesValid = validTimes(start.value, end.value);
+const form = document.getElementById("form");
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    output.innerHTML = "";
+    error.innerHTML = "";
+    const datesValid = validTimes(start.value, end.value);
 
-        if (datesValid) {
-            for (const car of carlist) {
+    if (datesValid) {
+        for (const car of carlist) {
                 
-                const pnumber = parseFloat(document.getElementById("number1").value);
-                const snumber = parseFloat(document.getElementById("suitcases").value);
-                const days = calcRentalDays(start.value, end.value);
-                const price = calcRentalCost(days, car.priceperday).toFixed(2);
+            const pnumber = parseFloat(document.getElementById("number1").value);
+            const snumber = parseFloat(document.getElementById("suitcases").value);
+            const days = calcRentalDays(start.value, end.value);
+            const price = calcRentalCost(days, car.priceperday).toFixed(2);
 
-                if (car.personnumber >= pnumber && car.suitcasenumber >= snumber) {
+            if (car.personnumber >= pnumber && car.suitcasenumber >= snumber) {
 
-                    template = `
+                template = `
                 <div class="single-item">
                     <div class="car-img-cont">
                         <img src="${car.image}" alt="Car picture" class="car-img">
@@ -69,10 +69,10 @@ function calcRentalCost (days, priceperday) {
                     </div>
                 </div>`
 
-                    output.insertAdjacentHTML("beforeend", template);
-                }
+                output.insertAdjacentHTML("beforeend", template);
             }
-        } else {
-            error.innerHTML = "The end date cannot be chosen before the start date";
         }
-    })
+    } else {
+        error.innerHTML = "The end date cannot be chosen before the start date";
+    }
+})

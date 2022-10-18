@@ -253,7 +253,7 @@ footer {
     font-style: italic;
 }
 .page-main {
-    min-height: 50em;
+    min-height: calc(100vh - 8em);
 }
 /* ACCESORY PAGE STYLING */
 .bannerholder,
@@ -508,7 +508,7 @@ x-currenttime {
         background-color: rgb(245, 192, 112);
     }
     .page-main {
-        min-height: 50.5em;
+        min-height: 21em;
     }
     /* ACCESSORY PAGE STYLING */
     .access-main {

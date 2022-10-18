@@ -8,5 +8,5 @@ fetch("https://igorlech.github.io/sunbeam/cars.json")
     carlist = post;
 })
 .catch (function (error) {
-    output.innerHTML = "Service is unbelievable";
+    output.innerHTML = "Service is unavailable";
 })

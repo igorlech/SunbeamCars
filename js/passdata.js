@@ -4,18 +4,6 @@ const URLDATA = new URLSearchParams(URL);
 const INOUTPUT = document.getElementById("output-aside");
 INOUTPUT.innerHTML = "Car: " + URLDATA.get('name') + "<br><br>Pick up date: " + URLDATA.get('pdate') + "<br>Return date: " + URLDATA.get('rdate') + "<br>Rental days: " + URLDATA.get('rdays') + "<br><br>Car rental cost: " + URLDATA.get('cost') + " kr<br>incl. VAT";
 
-// const a = URLDATA.get('cost')
-// console.log(a)
-
-// const buttoninsert = document.getElementById("acs8");
-
-// let buttontemplate = "";
-// buttontemplate = `<a href="customerinfo.html?test=${a}"><button type="submit" class="a-check-save" id="continueb">Continue</button></a>`;
-
-// buttoninsert.innerHTML = buttontemplate;
-
-
-
 const next = document.getElementById("form-a");
 
 //pass data to customer information page
